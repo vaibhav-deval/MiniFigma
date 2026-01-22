@@ -96,6 +96,10 @@ nav {
     transform: translateY(-2px) scale(1.05);
     transition: all 0.2s linear;
   }
+  button:active {
+    background: var(--accent-active);
+    transform: scale(0.9);
+  }
 }
 
 section {
