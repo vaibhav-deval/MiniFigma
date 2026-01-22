@@ -529,7 +529,7 @@ function exportHTML() {
   exportHTML_DataURL(generateHTML());
 }
 function exportJson() {
-  const json = JSON.stringify(allElements);
+  const json = JSON.stringify(allElements,null,2);
   const blob = new Blob([json], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
