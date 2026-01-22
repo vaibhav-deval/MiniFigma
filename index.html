@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Figma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+
+      <nav>
+          <button id="addRectangle">
+            Add Rectangle
+            <i class="ri-rectangle-line"></i>
+          </button>
+          <button id="addText">
+            Add Text <i class="ri-character-recognition-line"></i>
+          </button>
+          <button id="expoJSON">
+            Export JSON <i class="ri-file-code-line"></i>
+          </button>
+          <button id="expoHTML">
+            Export HTML<i class="ri-html5-fill"></i>
+          </button>
+      </nav>
+      <button class="showLayers asideBTN">Layer</button>
+      <button class="showProp asideBTN">Prop</button>
+      <section>
+        <div class="layersContainer panel">
+          <div class="top"> <button class="hideLayer"><i class="ri-arrow-left-double-fill"></i></button>Layers</div>
+          <div class="mid" id="layers"></div>
+          <div class="bottom">
+            <button id="MoveUp"><i class="ri-arrow-up-fill"></i>Move UP</button>
+            <button id="MoveDown">
+              <i class="ri-arrow-down-fill"></i>Move Down
+            </button>
+          </div>
+        </div>
+        <div class="canvasContainer panel" id="canvas"></div>
+        <div class="propContainer panel">
+          <div class="top">Properties <button class="hideProp"><i class="ri-arrow-right-double-line"></i></button></div>
+          <div class="bottom">
+            <label for="height">
+              Height <input id="height" type="number" />
+            </label>
+            <label for="width">
+              Width <input id="width" type="number" />
+            </label>
+            <label for="x"> X<input id="x" type="number" /> </label>
+            <label for="y"> Y<input id="y" type="number" /> </label>
+            <label for="rotation">
+              Rotation <input id="rotation" type="number" />
+            </label>
+            <label for="background">
+              Background <input id="background" type="text" />
+            </label>
+            <label for="text">
+              Text Content
+              <input id="text" type="text" />
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
