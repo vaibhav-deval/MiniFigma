@@ -279,6 +279,14 @@ function updateElem(data) {
 // --------------------------
 canvas.addEventListener("mousedown", (e) => {
   const elem = e.target.closest(".elem");
+   document.querySelectorAll(".elem").forEach((e) => {
+    e.classList.remove("selected");
+    e.querySelectorAll(".handle").forEach((h) => h.remove());
+  });
+  selectedElem=null;
+  selectedId=null;
+
+
 
   // If clicked on element
   if (elem) {
